@@ -1,0 +1,95 @@
+﻿.GifPickerModal {
+  padding: 0 !important;
+  max-height: 80vh;
+  
+  width: 900px;
+  max-width: 90vw !important;
+}
+
+.GifPickerInner {
+  padding: 10px;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  .Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 35px;
+
+    margin: -10px;
+    margin-bottom: 12px;
+
+    position: relative;
+    flex-shrink: 0;
+
+    .Title {
+      font-size: 1.1em;
+      font-weight: bolder;
+    }
+
+    .Button {
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      right: 10px;
+
+      cursor: pointer;
+      &:Hover { color: #ff7777; }
+    }
+  }
+
+  .SearchBar {
+    outline: none;
+    background-color: #31333c;
+    
+    border: 1px solid rgba(163,163,172,0.2);
+    border-radius: 4px;
+    padding: 10px;
+
+    &::Placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+  }
+
+  .ItemsContainer {
+    padding: 5px;
+    max-height: calc(100% - 80px);
+
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  .Items {
+    columns: 6 200px;
+  }
+
+  .TenorGifItem {
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    img {
+      width: 200px;
+      max-height: 270px;
+
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid rgba(163,163,172,0.2);
+    }
+  }
+
+  .CategoryTitle {
+    font-size: 1.2em;
+    font-weight: bolder;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
